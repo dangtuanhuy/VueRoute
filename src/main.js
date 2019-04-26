@@ -13,6 +13,7 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(axios)
 Vue.use(VueRouter)
+
 Vue.config.productionTip = false;
 const router = new VueRouter({
   routes,
