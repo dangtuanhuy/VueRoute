@@ -5,6 +5,7 @@
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
           <h1>Fill Form</h1>
           <hr>
+
           <div class="form-group">
             <label for="email">Mail</label>
             <input type="text" id="email" class="form-control" v-model="userData.email">
@@ -109,7 +110,6 @@ export default {
         age: ""
       },
       message: "",
-      
       sendMail:[],
       sex:'Male',
       selectedPriority:'High',
