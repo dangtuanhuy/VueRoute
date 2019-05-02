@@ -16,6 +16,32 @@
         <b-carousel-slide caption="Third Slide" img-src="https://picsum.photos/1024/480/?image=22"></b-carousel-slide>
       </b-carousel>
     </b-container>
+    <hr>
+    <b-container class="bv-example-row">
+      <b-row>
+        <b-col>
+          <h5>
+           Bubble
+            <code>fluid</code>:
+          </h5>
+          <b-img src="https://picsum.photos/300/150/?image=41" fluid alt="Fluid image"></b-img>
+        </b-col>
+        <b-col>
+          <h5>
+            Coffee shop
+            <code>fluid</code>:
+          </h5>
+          <b-img src="https://picsum.photos/300/150/?image=42" rounded="circle" fluid alt="Fluid image"></b-img>
+        </b-col>
+        <b-col>
+          <h5>
+            Bridge
+            <code>fluid</code>:
+          </h5>
+          <b-img src="https://picsum.photos/300/150/?image=43" fluid alt="Fluid image"></b-img>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
