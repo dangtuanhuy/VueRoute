@@ -22,6 +22,11 @@
             <b-nav-item>Table</b-nav-item>
           </router-link>
         </b-navbar-nav>
+         <b-navbar-nav>
+          <router-link to="/fruit" tag="div">
+            <b-nav-item>Fruits</b-nav-item>
+          </router-link>
+        </b-navbar-nav>
         <b-navbar-nav>
           <router-link to="/signip" tag="div">
             <b-nav-item>Sign Up</b-nav-item>
