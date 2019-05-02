@@ -1,6 +1,9 @@
 <template>
   <div>
     <b-container class="bv-example-row">
+      <br>
+      <button @click="navigateToHome" class="btn btn-dark">Go to Home</button>
+      <hr>
       <p class="mt-3">Current Page: {{ currentPage }}</p>
       <b-row>
         <b-col md="6" class="my-1">
@@ -22,7 +25,8 @@
         </b-col>
       </b-row>
       <div class="overflow-auto">
-        <b-table bordered="1"
+        <b-table
+          bordered="1"
           id="my-table"
           :items="dataTable"
           :per-page="perPage"
@@ -73,7 +77,6 @@ export default {
   data() {
     return {
       perPage: 5,
-
       currentPage: 1,
       items: [],
       options: [5, 10, 15, 20, 50],
@@ -85,6 +88,9 @@ export default {
     setPerPage(item) {
       this.perPage = item;
       this.selected = item + "";
+    },
+    navigateToHome() {
+      this.$router.push({ name: "home" });
     }
   },
   computed: {
