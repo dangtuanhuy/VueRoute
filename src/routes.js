@@ -1,3 +1,4 @@
+
 import HelloWorld from "./components/HelloWorld.vue";
 import myForm from "./components/myForm.vue";
 import formBootraps from "./components/fromBootstraps.vue";
@@ -6,13 +7,15 @@ import carouselBootstraps from "./components/carouselBootstraps.vue";
 import datatableBootstraps from "./components/datatableBootstraps.vue";
 import menuHeader from "./components/Header.vue";
 import footermdb from "./components/Footer.vue";
-
+import signin from "./components/SignUp.vue"
+import login from "./components/Login.vue"
 export const routes = [
     {
         path: '/',
         name: 'home',
         components: {
             default: carouselBootstraps,
+     
             'header-top': menuHeader,
             'header-bottom': footermdb
         }
@@ -20,6 +23,21 @@ export const routes = [
     {
         path: '/myForm', name: 'myForm', components: {
             default: myForm,
+            'header-top': menuHeader,
+            'header-bottom': footermdb
+        }
+    },
+    {
+        path: '/signip', name: 'signin', components:{
+            default: signin,
+            'header-top': menuHeader,
+            'header-bottom': footermdb
+        }
+
+    },
+    {
+        path: '/login', name: 'login', components:{
+            default: login,
             'header-top': menuHeader,
             'header-bottom': footermdb
         }
